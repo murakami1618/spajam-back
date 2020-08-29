@@ -21,4 +21,6 @@ Route::get('/front', function () {
     return view('front');
 });
 
-Route::get('/index', 'ScoreController@index');
+Route::get('/index', 'ScoreController@get');
+
+Route::post('/index', 'ScoreController@store');
